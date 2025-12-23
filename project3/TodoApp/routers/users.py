@@ -6,8 +6,8 @@ from fastapi import APIRouter, Depends
 from starlette import status
 from passlib.context import CryptContext
 
-from models import Todos, Users
-from database import SessionLocal
+from ..models import Todos, Users
+from ..database import SessionLocal
 from .auth import get_current_user
 
 router = APIRouter(
